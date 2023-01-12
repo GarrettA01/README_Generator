@@ -66,16 +66,20 @@ const questions = () => {
 
 // TODO: Create a function to initialize app
 const init = () => {
-  promptUser().then((response) => {
-    const create = Markdown.generateMarkdown(response);
-    fs.writeFile("README.md", create, function (err) {
-      if (err) {
-        console.error(err);
-      } else {
-        console.log("Successfulyy created README.md");
-      }
+  questions()
+    .then((response) => {
+      const create = Markdown.generateMarkdown(response);
+      fs.writeFile("README.md", create, function (err) {
+        if (err) {
+          console.error(err);
+        } else {
+          console.log("Successfulyy created README.md");
+        }
+      });
+    })
+    .catch((error) => {
+      console.log(error);
     });
-  });
 };
 
 // Function call to initialize app
