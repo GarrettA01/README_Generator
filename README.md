@@ -34,7 +34,7 @@
 
   ## Links
 
-  Link to application:
+  Link to application: https://github.com/GarrettA01/README_Generator
 
   ## Tests
 
