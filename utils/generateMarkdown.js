@@ -30,18 +30,67 @@ class Markdown {
   // If there is no license, return an empty string
   static renderLicenseSection(license) {
     if (license) {
-      return `Licensed by ${this.renderLicenseLink(license)}`;
+      return `Licensed by ${this.renderLicenseLink(license)}.`;
     } else {
-      return "";
+      return " ";
     }
+  }
+
+  // TODO: Create a function to generate markdown for README
+  static generateMarkdown(data) {
+    return `# ${data.title}
+
+  ${this.renderLicenseBadge(data.license)}
+
+
+  ## Table of Contents
+  -[Project Description](#description)
+
+  -[Installation](#installation) 
+
+  -[Usage](#usage)  
+
+  -[License](#license)  
+
+  -[Tests](#tests)  
+
+  -[Contributions](#contributions)  
+
+  ## Description
+
+  ${data.description}
+
+  ## Installation
+
+  ${data.installation}
+
+  ## Usage
+
+  ${data.usage}
+
+  ## Licesne
+
+  ${this.renderLicenseSection(data.license)}
+
+  ## Links
+
+  Link to application:
+
+  ## Tests
+
+  ${data.tests}
+
+  ## Contributions
+
+  ${data.contributions}
+
+  ## Contact
+
+  For additional information, contact me at my github: 
+  ${data.user} or email me at ${data.email}!
+
+`;
   }
 }
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
-}
-
-module.exports = generateMarkdown;
+module.exports = Markdown;

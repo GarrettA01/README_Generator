@@ -1,6 +1,6 @@
-# README_Generator
+# Sample_README
 
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  ![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)
 
 
   ## Table of Contents
@@ -18,7 +18,7 @@
 
   ## Description
 
-  This project generates READMEs automatically when users answer the prompted questions.
+  This is a test README
 
   ## Installation
 
@@ -26,11 +26,11 @@
 
   ## Usage
 
-  Run the command node index.js to begin, answer the questions prompted.
+  Test
 
   ## Licesne
 
-  Licensed by [MIT](https://opensource.org/licenses/MIT).
+  Licensed by [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
 
   ## Links
 
@@ -47,5 +47,5 @@
   ## Contact
 
   For additional information, contact me at my github: 
-  github.com/GarrettA01 or email me at gman.anderson2001@gmail.com!
+   github.com/GarrettA01 or email me at gman.anderson2001@gmail.com!
 

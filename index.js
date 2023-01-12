@@ -9,7 +9,7 @@ const questions = () => {
   return inquirer.prompt([
     {
       type: "input",
-      message: "What is your Github username?",
+      message: "What is your Github link?",
       name: "user",
     },
     {
@@ -29,7 +29,7 @@ const questions = () => {
     },
     {
       type: "input",
-      message: "Prove installation instructions",
+      message: "What command should be run to install packages?",
       name: "installation",
     },
     {
@@ -39,14 +39,9 @@ const questions = () => {
     },
     {
       type: "checkbox",
-      message: "What license would you like to put on your project?",
+      message: "What kind of license should your project have?",
       name: "license",
-      choices: ["None", "MIT", "GPLv2", "GPLv3", "IBM"],
-    },
-    {
-      type: "input",
-      message: "What command should be run to instal packages?",
-      name: "installation",
+      choices: ["MIT", "GPLv2", "GPLv3", "IBM"],
     },
     {
       type: "input",
@@ -73,7 +68,7 @@ const init = () => {
         if (err) {
           console.error(err);
         } else {
-          console.log("Successfulyy created README.md");
+          console.log("Successfully created README.md");
         }
       });
     })
